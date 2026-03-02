@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PANA TRAVELLING</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+body{background:#ffffff;color:#333;}
+
+.site-header {
+    display: flex;
+    align-items: center; /* Vertically aligns items in the center */
+    justify-content: space-between; /* Puts space between the logo section and nav */
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+}
+
+.logo-link {
+    display: flex; /* Makes the logo and title sit side-by-side */
+    align-items: center;
+    text-decoration: none; /* Removes the default underline from the link */
+    color: inherit; /* Inherits color from parent or sets a specific color */
+}
+
+.logo {
+    height: 50px; /* Set a specific height for the logo */
+    width: auto; /* Maintains the image's aspect ratio */
+    margin-right: 15px; /* Adds space between the logo and the title */
+}
+
+.site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+nav{
+background:#3d0007;
+padding:12px;
+text-align:center;
+}
+
+nav a{
+color:rgb(255, 255, 255);
+text-decoration:none;
+margin:15px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{color:#07ff87;}
+
+.hero{
+position:relative;
+height:90vh;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.hero-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:rgb(233, 195, 195);
+text-align:center;
+background:rgba(0,0,0,0.6);
+padding:30px;
+border-radius:15px;
+animation:fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn{
+from{opacity:0;transform:translate(-50%,-40%);}
+to{opacity:1;transform:translate(-50%,-50%);}
+}
+
+.section{padding:70px 10%;text-align:center;}
+.section h2{font-size:35px;color:#16004d;margin-bottom:20px;}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* This creates uniform space between items only */
+}
+
+.gallery img {
+  width: 350px;
+  height: 250px;
+  border-radius: 15px;
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.packages{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.package-box{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+width:300px;
+transition:0.3s;
+}
+
+.package-box:hover{transform:translateY(-10px);}
+
+.partner-section{
+display:flex;
+justify-content:center;
+gap:80px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.partner-box{
+background:white;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.partner-box img{width:150px;}
+
+.booking-form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.booking-form input, .booking-form textarea{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.booking-form button{
+padding:12px;
+background:#b49aec;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+}
+
+.booking-form button:hover{background:#004d40;}
+
+footer{
+background:#00251a;
+color:white;
+padding:20px;
+text-align:center;
+margin-top:50px;
+}
+
+/* WhatsApp Button */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25d366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+.whatsapp:hover{background:#1ebe5d;}
+
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="logo-link">
+        <img src="PANA.png" alt="Company Logo" class="logo">
+        <h1 class="site-title">PANA TRAVELINGS</h1>
+    </a>
+    <nav class="site-nav">
+        <a href="#">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#packages">Packages</a>
+        <a href="#booking">Booking</a>
+        <a href="#partners">Partners</a>
+    </nav>
+</header>
+
+
+<!-- HERO VIDEO SECTION -->
+<div class="hero">
+<video autoplay muted loop>
+<source src="videoplayback.mp4" type="video/mp4">
+</video>
+
+<div class="hero-content">
+<h2>Discover Sri Lanka</h2>
+<p>Your Dream Vacation Starts Here</p>
+</div>
+</div>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+<h2>Sri Lanka Image Album</h2>
+<div class="gallery">
+<img src="back.png">
+<img src="acc.jpg">
+<img src="J.jpg">
+<img src="kl.jpg">
+<img src="O.jpg">
+<img src="W.jpg">
+</div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section" id="packages">
+<h2>Tour Packages</h2>
+<div class="packages">
+
+<div class="package-box">
+<h3>Beach Paradise Tour</h3>
+<p>3 Days / 2 Nights</p>
+<p>Enjoy Sri Lanka’s golden beaches.</p>
+</div>
+
+<div class="package-box">
+<h3>Hill Country Adventure</h3>
+<p>4 Days / 3 Nights</p>
+<p>Visit Ella, Nuwara Eliya & Tea Estates.</p>
+</div>
+
+<div class="package-box">
+<h3>Heritage Explorer</h3>
+<p>5 Days / 4 Nights</p>
+<p>Discover Sigiriya & Ancient Cities.</p>
+</div>
+
+</div>
+</section>
+
+<!-- BOOKING -->
+<section class="section" id="booking">
+<h2>Book Your Tour</h2>
+<form class="booking-form">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="date" required>
+<textarea placeholder="Your Message"></textarea>
+<button type="submit">Submit Booking</button>
+</form>
+</section>
+
+<!-- PARTNERS -->
+<section class="section" id="partners">
+<h2>Our Partners</h2>
+<div class="partner-section">
+
+<div class="partner-box">
+<h3>Premier Partner</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png">
+<p>Wikipedia</p>
+</div>
+
+<div class="partner-box">
+<h3>Global Partner</h3>
+<img src="chatgpt-logo.png">
+<p>ChatGPT</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>📞 0716523645 | © 2026 PANA TRAVELLING</p>
+</footer>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://youtu.be/KCn5Gc38oO4?si=R-Sra7dvzxEKAWYV" target="_blank">WhatsApp</a>
+
+
+</body>
+</html>
